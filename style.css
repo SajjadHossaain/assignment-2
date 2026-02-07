@@ -185,7 +185,7 @@ hr{
 /* choose-section */
 .choose-section{
    background-color: rgba(35, 14, 61, 1);
-   height: 1120px;
+   /* height: 1120px; */
 }
 .choose-container{
     max-width: 1200px;
@@ -204,6 +204,8 @@ hr{
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,225px) 275px;
     gap: 30px;
+    padding-bottom: 120px;;
+    
 }
 .grid-item{
     background-color: rgba(53, 17, 101, 0.4);
@@ -269,5 +271,23 @@ hr{
     }
     .description{
         text-align: center;
+    }
+    /* choose section*/
+    .grid-container{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 285px 0 215px 215px 310px 215px;
+        padding: 40px 20px;
+    }
+    .grid-item {
+        width: 90vw;
+    }
+    .grid-title{
+        font-size: 1.3rem;
+        margin: 16px 0;
+    }
+    .choose-title{
+        font-size: 2rem;
+        padding: 40px 20px 0;
+        margin-bottom: 0;
     }
 }
