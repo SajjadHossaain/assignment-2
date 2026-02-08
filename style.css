@@ -22,7 +22,7 @@
 .bg-color{
     background-color: #412567;
 }
-main,.banner,.about-section{
+main,.banner,.about-section,.episodes-section{
     max-width: 1600px;
     margin: 0 auto;
 }
@@ -230,6 +230,102 @@ hr{
 }
 .sidebar-colspan{
     grid-column: span 2;
+}
+
+/* episodes-section */
+.episodes-section{
+    background-color: rgba(26, 11, 46, 1);
+}
+.section-title,.host-title{
+    text-align: center;
+    padding-top: 120px;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.video-container,.meet-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.content-card{
+    /* border:2px solid tomato; */
+    width: 380px;
+    height: 440px;
+    background-color: rgba(37, 13, 68, 1);
+    border-radius: 24px;
+}
+.video-item{
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 50%;
+    border-radius: 24px 24px 0 0;
+}
+.video-item iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 24px 24px 0 0;
+}
+.video-details{
+    padding: 24px;
+    width: 100%;
+    height: 100%;
+}
+.video-title{
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+}
+.video-description{
+    color: #FFFFFF;
+    opacity: 0.6;
+    margin-bottom: 12px;
+}
+.duration{
+    color: #00FF88;
+    font-weight: 600;
+    gap: 5px;
+}
+.video-container{
+    gap: 30px;
+}
+.meet-container{
+    padding-bottom: 120px;
+}
+.host-container{
+    background-color: rgba(83, 60, 114, 1);
+    border-radius: 40px;
+    padding: 40px;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+.host-name{
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.host-description{
+    color: #FFFFFF;
+    opacity: 0.6;
+    padding: 16px 0;
+    line-height: 24px;
+}
+.social-links{
+    list-style: none;
+    gap: 8px;
+    align-items: center;
+}
+.social-item{
+    border: 2px solid gray;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.social link{
+    text-decoration: none;
 }
 /* responsive small device */
 @media screen and (max-width:576px) {
