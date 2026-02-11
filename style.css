@@ -22,7 +22,7 @@
 .bg-color{
     background-color: #412567;
 }
-main,.banner,.about-section,.episodes-section{
+main,.about-section,.episodes-section{
     max-width: 1600px;
     margin: 0 auto;
 }
@@ -77,39 +77,47 @@ main,.banner,.about-section,.episodes-section{
 }
 
 /* banner-section */
-.banner{
-    background: url('assets/hero-bg.png');
-    background-repeat: no-repeat;
+.banner-section{
+    max-width: 1600px;
+    padding: 100px 0;
+    margin: 0 auto;
+    background-image: url("assets/hero-bg.png");
     background-position: center;
     background-size: cover;
-    height: 760px;
-    justify-content: center;
-    
-}
-.banner-content{
-    max-width:550px;
-    height: 560px;
-    background-image: url("assets/hero-circle.png");
     background-repeat: no-repeat;
-    background-position: top center;
-    margin: 0 auto;
-    position: relative;
-    top: 100px;
-    text-align: center;
-} 
-.banner-logo{
-    margin-top: 70px;
-    margin-bottom: 121px;
 }
-.banner-title{
-    font-size: 3.75rem;
+.hero-content{
+    justify-content: center;
+    max-width: 550px;
+    margin: 0 auto;
+
+}
+.hero-logo{
+    background-image: url("assets/hero-circle.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 350px;
+}
+.hero-logo img{
+    margin: 77px 116px 97px;
+}
+.banner-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-title{
+    font-size: 5rem;
     color: #FFFFFF;
-    margin-bottom: 8px;
+    margin-top: 40px;
     font-weight: 800;
 }
-.banner-description{
-    color: #FFFFFF;
-    margin-bottom: 24px;
+.hero-decription{
+    color: white;
+    opacity: 0.5;
+    text-align: center;
+    margin: 8px 0 24px;
 }
 .spotify-btn{
     width: 210px;
@@ -128,11 +136,10 @@ main,.banner,.about-section,.episodes-section{
     font-weight: 600;
     color:#00FF88;
 }
-.banner-btn{
+.hero-btn{
     gap: 8px;
     justify-content: center;
 }
-
 /* about-section */
 .about-section{
     background-color: rgba(26, 11, 46, 1);
@@ -374,6 +381,18 @@ hr{
     .nav-links{
         align-items: center;
     }
+    /* hero */
+    .banner-section{
+        padding: 40px 0;
+    }
+    .hero-content{
+        margin: 0 20px;
+    }
+    .hero-title{
+        font-size: 2.5rem;
+        margin-top: 24px;
+        font-weight: 800;
+    }
     /* about-section */
     /* .about-container{
         padding: 40px 20px;
@@ -384,6 +403,7 @@ hr{
      .about-details{
         padding: 40px 20px;
      }
+    
     .about-card{
         grid-template-columns: repeat(2,1fr);
         justify-items: center;
@@ -473,4 +493,8 @@ hr{
     .copy-right{
         text-align:center;
     }
+}
+/* Responsive for medium device */
+@media screen and (min-width:576px) and (max-width:768px) {
+    
 }
