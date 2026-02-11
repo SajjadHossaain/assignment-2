@@ -394,9 +394,6 @@ hr{
         font-weight: 800;
     }
     /* about-section */
-    /* .about-container{
-        padding: 40px 20px;
-    } */
      .about-container{
         padding: 0;
      }
@@ -495,6 +492,6 @@ hr{
     }
 }
 /* Responsive for medium device */
-@media screen and (min-width:576px) and (max-width:768px) {
+/* @media screen and (min-width:576px) and (max-width:768px) {
     
-}
+} */
