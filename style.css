@@ -50,7 +50,7 @@ main,.about-section,.episodes-section{
 .navbar{
     max-width: 1600px;
     margin: 0 auto;
-    height: 92px;
+    padding: 24px 0;
 }
 .navbar{
     justify-content: space-around;
@@ -68,14 +68,16 @@ main,.about-section,.episodes-section{
     text-decoration: none;
 }
 .brand{
-    width: 219px;
+    /* width: 219px; */
     height: 32px;
     font-size: 2rem;
     color: #FFFFFF;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
 }
-
+.menu-icon{
+    display: none;
+}
 /* banner-section */
 .banner-section{
     max-width: 1600px;
@@ -375,18 +377,22 @@ hr{
 /* responsive small device */
 @media screen and (max-width:576px) {
     /* nav */
-    .navbar,.nav-links{
-        flex-direction: column;
+    .navbar{
+        justify-content: space-between;
+        padding: 20px 20px;
     }
-    .nav-links{
-        align-items: center;
+    .menu-icon{
+        display: inline;
+    }
+    .nav-links,.nav-btn{
+        display: none;
     }
     /* hero */
     .banner-section{
-        padding: 40px 0;
+        padding: 40px 20px;
     }
     .hero-content{
-        margin: 0 20px;
+        width: 100%;
     }
     .hero-title{
         font-size: 2.5rem;
