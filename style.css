@@ -157,6 +157,7 @@ main,.about-section,.episodes-section{
     font-weight: 700;
     color: #FFFFFF;
     text-align: center;
+    margin-bottom: 16px;
 }
 .description{
     color: #FFFFFF;
@@ -166,6 +167,7 @@ main,.about-section,.episodes-section{
     line-height: 20px;
     letter-spacing: 0%;
     text-align: center;
+    opacity: 0.8;
 }
 hr{
     margin: 80px 0px;
@@ -210,7 +212,7 @@ hr{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,225px) 275px;
-    gap: 30px;
+    grid-gap: 30px;
     padding-bottom: 120px;;
     
 }
@@ -357,7 +359,7 @@ hr{
     .footer-links{
         display: grid;
         grid-template-columns:repeat(4,1fr) ;
-        gap: 40px;
+        grid-gap: 40px;
         margin: 32px 0;
     }
     .foot-link{
@@ -435,6 +437,7 @@ hr{
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: 285px 0 215px 215px 310px 215px;
         padding: 40px 20px;
+        row-gap: 30px;
     }
     .grid-item {
         width: 90vw;
@@ -498,6 +501,110 @@ hr{
     }
 }
 /* Responsive for medium device */
-@media screen and (min-width:576px) and (max-width:768px) {
+@media screen and (min-width:576px) and (max-width:992px) {
+/* navbar */
+  .navbar{
+        justify-content: space-between;
+        padding: 20px 20px;
+    }
+    /* hero */
+    .banner-section{
+        padding: 40px 20px;
+    }
+    .hero-content{
+        width: 100%;
+    }
+    .hero-title{
+        font-size: 2.5rem;
+        margin-top: 24px;
+        font-weight: 800;
+    }
+    /* about-section */
+     .about-container{
+        padding: 0;
+     }
+     .about-details{
+        padding: 40px 20px;
+     }
     
+    .about-card{
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        align-items: center;
+        gap: 40px;
+        margin: 40px 20px;
+    }
+    hr{
+        margin: 0 20px;
+    }
+    .card-number{
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .aboout-title{
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    .description{
+        text-align: center;
+    }
+    /* choose section */
+     .grid-container{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 285px 0 215px 215px 310px 215px;
+        padding: 40px 20px;
+        row-gap: 30px;
+    } 
+     .grid-item {
+        overflow: hidden;
+        /* width: 90vw; */
+    }       
+    .grid-title{
+        font-size: 1.3rem;
+        margin: 16px 0;
+    }
+    .choose-title{
+        font-size: 2rem;
+        padding: 40px 20px 0;
+        margin-bottom: 0;
+    }
+     /* episode section */
+      .section-title{
+        padding: 40px 20px 0;
+        margin: 0 20px;
+        font-size: 2rem;
+        margin-bottom: 24px;
+    }
+    .video-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .content-card{
+        margin: 0 20px;
+    }
+    .video-details{
+        overflow: hidden;
+    }
+    .video-description{
+        text-overflow: clip;
+    }
+    .host-container{
+        margin: 0 20px;
+    }
+    .footer-links{
+    grid-template-columns: repeat(2,1fr);
+   }
+   .footer-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 20px;
+    }
+    .footer-links{
+        gap: 16px;
+        margin: 24px 0;
+    }
+    .copy-right{
+        text-align:center;
+    }
 }
