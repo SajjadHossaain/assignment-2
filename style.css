@@ -10,10 +10,6 @@
   font-weight: 400;
   font-style: normal;
 }
-/* hide */
-.hide{
-    display: none;
-}
 /* shared style */
 .display-flex{
     display: flex;
@@ -38,6 +34,18 @@ main,.about-section,.episodes-section{
 .btn-gradient{ 
     background: linear-gradient(47.64deg,rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
 }
+.badge{
+    position: relative;
+    left: 255px;
+    bottom: 310px;
+    background: #00ff88;
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 136, 1);
+}
 /* navbar-style */
 .nav-btn{
     width: 135px;
@@ -46,6 +54,11 @@ main,.about-section,.episodes-section{
     font-weight: 600;
     border: none;
     border-radius: 10000px;
+    transition: transform 1s, box-shadow 1s;
+}
+.nav-btn:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(251, 9, 180, 1);
 }
 .navbar{
     max-width: 1600px;
@@ -68,12 +81,9 @@ main,.about-section,.episodes-section{
     text-decoration: none;
 }
 .brand{
-    /* width: 219px; */
     height: 32px;
     font-size: 2rem;
     color: #FFFFFF;
-    /* justify-content: center; */
-    /* align-items: center; */
 }
 .menu-icon{
     display: none;
@@ -128,6 +138,11 @@ main,.about-section,.episodes-section{
     font-weight: 600;
     border: none;
     border-radius: 10000px;
+    transition: transform 1s, box-shadow 1s;
+}
+.spotify-btn:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 20px rgba(251, 9, 180, 1);
 }
 .sub-btn{
     width: 147px;
@@ -137,6 +152,11 @@ main,.about-section,.episodes-section{
     border-radius: 10000px;
     font-weight: 600;
     color:#00FF88;
+    transition: transform 1s, box-shadow 1s;
+}
+.sub-btn:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 20px #00FF88;
 }
 .hero-btn{
     gap: 8px;
@@ -261,6 +281,10 @@ hr{
     height: 440px;
     background-color: rgba(37, 13, 68, 1);
     border-radius: 24px;
+    transition: transform 0.5s;
+}
+.content-card:hover{
+    transform: scale(1.1);
 }
 .video-item{
     width: 100%;
@@ -331,6 +355,11 @@ hr{
     border-radius: 50%;
     justify-content: center;
     align-items: center;
+    transition: transform 1s ;
+}
+.social-item:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(251, 9, 180, 1);
 }
 .social link{
     text-decoration: none;
