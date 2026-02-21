@@ -197,6 +197,7 @@ hr{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     align-content: center;
+    margin-bottom: 120px;
 }
 .card-number{
     text-align: center;
