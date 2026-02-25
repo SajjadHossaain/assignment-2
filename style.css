@@ -36,25 +36,43 @@ main,.about-section,.episodes-section{
 }
 .badge{
     position: relative;
-    left: 255px;
-    bottom: 310px;
+    left: 160px;
+    bottom: 470px;
     background: #00ff88;
     color: black;
     font-weight: 600;
     font-size: 14px;
-    padding: 6px 14px;
+    padding: 8px 14px;
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 255, 136, 1);
 }
 /* navbar-style */
 .nav-btn{
-    width: 135px;
-    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 16px;
     color: #FFFFFF;
     font-weight: 600;
     border: none;
     border-radius: 10000px;
     transition: transform 1s, box-shadow 1s;
+}
+.animated-btn{
+    animation: arrow-animated;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+}
+@keyframes arrow-animated{
+    0%{
+        transform: translate(0);
+    }
+    100%{
+        transform: translateX(5px);
+    }
 }
 .nav-btn:hover{
     transform: scale(1.1);
@@ -105,15 +123,15 @@ main,.about-section,.episodes-section{
 
 }
 .hero-logo{
-    background-image: url("assets/hero-circle.png");
-    background-position: center;
-    background-repeat: no-repeat;
+    position: relative;
     width: 350px;
     height: 350px;
 }
-.hero-logo img{
-    margin: 77px 116px 97px;
-}
+.mic{
+    position: relative;
+    left: 115px;
+    bottom: 260px;
+ }
 .banner-container{
     flex-direction: column;
     justify-content: center;
@@ -132,8 +150,11 @@ main,.about-section,.episodes-section{
     margin: 8px 0 24px;
 }
 .spotify-btn{
-    width: 210px;
-    height: 45px;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 20px;
     color: #FFFFFF;
     font-weight: 600;
     border: none;
@@ -142,12 +163,15 @@ main,.about-section,.episodes-section{
 }
 .spotify-btn:hover{
     transform: scale(1.1);
-    box-shadow: 5px 5px 20px rgba(251, 9, 180, 1);
+    box-shadow: 0 0 20px rgba(251, 9, 180, 1);
 }
 .sub-btn{
-    width: 147px;
-    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
     border: 1px solid #00FF88;
+    padding: 13px 20px;
     background: none;
     border-radius: 10000px;
     font-weight: 600;
@@ -156,7 +180,7 @@ main,.about-section,.episodes-section{
 }
 .sub-btn:hover{
     transform: scale(1.1);
-    box-shadow: 5px 5px 20px #00FF88;
+    box-shadow: 0 0 20px #00FF88;
 }
 .hero-btn{
     gap: 8px;
@@ -423,8 +447,32 @@ hr{
     .banner-section{
         padding: 40px 20px;
     }
+    .badge{
+    left: 30px;
+    bottom: 310px;
+    }
     .hero-content{
         width: 100%;
+    }
+    .banner-container{
+        width: 400px;
+        height: 390px;
+    }
+    .hero-logo{
+       width: 200px;
+       height: 200px;
+       padding-top: 30px;
+       margin-bottom: 24px;
+        
+    }
+    .hero-circle{
+        width: 200px;
+        
+    }
+    .mic{
+        width: 80px;
+        left: 60px;
+        bottom: 170px;
     }
     .hero-title{
         font-size: 2.5rem;
@@ -538,6 +586,7 @@ hr{
         padding: 20px 20px;
     }
     /* hero */
+
     .banner-section{
         padding: 40px 20px;
     }
